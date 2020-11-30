@@ -3,8 +3,8 @@
 */
 
 enum Directions {
-    //% block=links
-    links = 0,
+    //% block=left
+    left = 0,
     //% block=right
     right = 1
 }
@@ -44,16 +44,16 @@ namespace NeoMatrix {
         return MatrixHeight
     }
     /**
-     * Make entered display changes
+     * Make display changes
      */
-    //%block="Matrix view changes"
+    //%block="matrix show"
     export function showMatrix(): void {
         matrix.show()
     }
     /**
-     * turn off all lights of the matrix
+     * Turn off all lights of the matrix
      */
-    //% block="Matrix empty"
+    //% block="matrix clear"
     //% weight=1
     export function empty(): void {
         matrix.clear()
@@ -63,7 +63,7 @@ namespace NeoMatrix {
     * Convert a pixel at this position to a specific color.
     * Pay attention! The pixels only turn on after the block "Display matrix changes"
     */
-    //% block="Set pixel on position x %x| y %y| with color %colour"
+    //% block="set pixel on position x %x| y %y| with color %colour"
     //% colour.shadow="Matrix_rgb"
     //% weight=100
     export function setPixel(x: number, y: number, colour: number) {
@@ -77,7 +77,7 @@ namespace NeoMatrix {
             matrix.setPixelColor(((MatrixHeight - 1 - y) + MatrixHeight * x), colour)
         }
     }
-    //% block="Scroll text %dates with waiting time %delayTime and color %colour scroll to %direction=NeoMatrix_Direction"
+    //% block="scroll text %dates with waiting time %delayTime and color %colour scroll to %direction=NeoMatrix_Direction"
     //% colour.shadow="Matrix_rgb"
     //% weight=95
     //% delayTime.min=0 delayTime.max=2000
@@ -192,7 +192,7 @@ namespace NeoMatrix {
         return direction;
     }
 
-    //%block="zet Matrix Brightness (0-255) %setPoint" 
+    //%block="set matrix brightness (0-255) %setPoint" 
     //%setPoint.max=255 setPoint.min=0 setPoint.defl=32
     export function Brightness(setPoint: number) {
         matrix.setBrightness(setPoint)
@@ -205,7 +205,7 @@ namespace NeoMatrix {
      * @param blue value of the blue channel between 0 and 255. eg: 255
      */
     //% weight=1
-    //% blockId="Matrix_rgb" block="rood %red|groen %green|blue %blue"
+    //% blockId="Matrix_rgb" block="red %red|green %green|blue %blue"
     //% advanced=true
     //%red.defl=255 blue.defl=255 green.defl=255
     export function rgb(red: number, green: number, blue: number): number {
