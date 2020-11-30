@@ -44,7 +44,7 @@ namespace NeoMatrix {
         return MatrixHeight
     }
     /**
-     * Make display changes
+     *  Display matrix changes
      */
     //%block="matrix show"
     export function showMatrix(): void {

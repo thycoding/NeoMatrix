@@ -1,12 +1,12 @@
 {
     "name": "NeoMatrix",
-    "version": "1.2",
-    "description": "Support for various sizes of NeoPixel Matrices",
+    "version": "1.0",
+    "description": "NeoMatrix @THYCoding </>",
     "license": "MIT",
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "neopixel": "github:microsoft/pxt-neopixel#v0.6.12"
+        "neopixel": "github:thycoding/neopixel#92737760dbbcac67d807da1e70c006804eb6f971"
     },
     "files": [
         "README.md",
