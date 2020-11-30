@@ -61,11 +61,11 @@ namespace NeoMatrix {
 
     /**
     * Convert a pixel at this position to a specific color.
-    * Pay attention! The pixels only turn on after the block "Display matrix changes"
+    * Pay attention! The pixels only turn on after the block "matrix show"
     */
     //% block="set pixel on position x %x| y %y| with color %colour"
     //% colour.shadow="Matrix_rgb"
-    //% weight=100
+    //% weight=95
     export function setPixel(x: number, y: number, colour: number) {
         if (x >= MatrixWidth) { x = MatrixWidth - 1 }
         if (y >= MatrixHeight) { y = MatrixHeight - 1 }
@@ -79,7 +79,7 @@ namespace NeoMatrix {
     }
     //% block="scroll text %dates with waiting time %delayTime and color %colour scroll to %direction=NeoMatrix_Direction"
     //% colour.shadow="Matrix_rgb"
-    //% weight=95
+    //% weight=97
     //% delayTime.min=0 delayTime.max=2000
     export function scrollText(data: string, delayTime: number, colour: number, direction: number): void {
         matrix.clear()
