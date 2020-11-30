@@ -6,6 +6,7 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
+        "bluetooth": "*",		
         "neopixel": "github:thycoding/neopixel#92737760dbbcac67d807da1e70c006804eb6f971"
     },
     "files": [
@@ -19,14 +20,6 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj",
-    "yotta": {
-        "config": {
-            "microbit-dal": {
-                "bluetooth": {
-                    "enabled": 1
-                }
-            }
-        }
-    }	
+    "public": true,
+    "preferredEditor": "tsprj"	
 }
